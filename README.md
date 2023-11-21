@@ -28,5 +28,5 @@ This script integrates a LLM into the AssemblyAI Real-Time API to correct spelli
 [4] Latency may be a slight concern here. Depending on OpenAI's system traffic levels, the LLM call can take anywhere from 1-5 seconds to return the corrected utterance. IMO, this added latency worth it if it fixes the downstream dish detection issue. I have a few ideas on ways we can try to reduce this including fine-tuning a smaller model (davinci-003) or combining the spell correction + dish detection NER processes. Sadly, LeMUR won't be a viable option here as the latency is just too long to be used in a Real-Time setting.
 
 ### Demo
-<video src="./demo.mov" controls="controls">
+<video src="./demo.mp4" controls="controls">
 </video>
